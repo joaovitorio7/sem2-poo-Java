@@ -8,7 +8,11 @@ public class Conta {
 
     //this se refere ao atributo
     void sacar(double valor){
-        this.saldo -= valor;
+        if(valor <= this.saldo) {
+            this.saldo -= valor;
+        } else {
+            System.out.println("Não foi possível realizar o saque. COnsulte seu saldo.");
+        }
     }
 
     void depositar(double valor){
