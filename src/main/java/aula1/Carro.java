@@ -14,17 +14,21 @@ public class Carro {
 
     boolean possuiEscada;
 
-    double velocidade;
+   private double velocidade;
 
 //Métodos
 
-    double acelerar(double aceleracao){
+    public double acelerar(double aceleracao){
         this.velocidade += aceleracao;
         return this.velocidade;
     }
 
-    double frear(double freada){
+    public double frear(double freada){
         this.velocidade -= freada;
+        return this.velocidade;
+    }
+
+    public double velocimetro(){
         return this.velocidade;
     }
 

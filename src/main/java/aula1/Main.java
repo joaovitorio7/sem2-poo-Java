@@ -8,9 +8,21 @@ public class Main {
         unoDeFirma.ano = 2005;
         unoDeFirma.numPortas = 2;
 
-        unoDeFirma.acelerar(2);
-        unoDeFirma.acelerar(3);
+        double velocidadeDoUninho = unoDeFirma.acelerar(2);
+        velocidadeDoUninho = unoDeFirma.acelerar(3);
 
-        System.out.println(unoDeFirma.velocidade);
+        System.out.println(velocidadeDoUninho);
+
+        Carro sandero = new Carro();
+        sandero.cor = "Prata";
+        sandero.possuiEscada = false;
+        sandero.ano = 2015;
+        sandero.numPortas = 4;
+
+        sandero.acelerar(3);
+        sandero.acelerar(5);
+        double velocidadeDoSandero = sandero.frear(2);
+
+        System.out.println(velocidadeDoSandero);
     }
 }
