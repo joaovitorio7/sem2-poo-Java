@@ -18,12 +18,12 @@ public class Carro {
 
 //Métodos
 
-    void acelerar(double aceleracao){
+    double acelerar(double aceleracao){
         this.velocidade += aceleracao;
         return this.velocidade;
     }
 
-    void frear(double freada){
+    double frear(double freada){
         this.velocidade -= freada;
         return this.velocidade;
     }
