@@ -11,7 +11,7 @@ public class Conta {
         if(valor <= this.saldo) {
             this.saldo -= valor;
         } else {
-            System.out.println("Não foi possível realizar o saque. COnsulte seu saldo.");
+            System.out.println("Não foi possível realizar o saque. Consulte seu saldo.");
         }
     }
 
