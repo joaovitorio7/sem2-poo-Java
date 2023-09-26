@@ -13,5 +13,6 @@ public class TestaTransferencia {
 
         System.out.printf("Saldo da conta c1 é R$%.2f%n", c1.getSaldo());
         System.out.printf("Saldo da conta c2 é R$%.2f%n", c2.getSaldo());
+        System.out.println(c1);
     }
 }
