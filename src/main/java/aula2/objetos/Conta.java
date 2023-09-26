@@ -1,7 +1,11 @@
 package aula2.objetos;
 
-public class Conta {
-    String nomeTitular;
+public class Conta{
+
+    // dentro da classo conta tenho o cliente que é o titular dessa conta
+    Cliente titular;
+
+    Cliente dependente;
 
     // colocar como privado significa boas práticas em JAVA, coloca-se private nos atributos.
     private double saldo;
