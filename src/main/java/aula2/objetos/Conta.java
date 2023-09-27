@@ -1,7 +1,7 @@
 package aula2.objetos;
 
 public class Conta{
-    Cliente titular;
+    Cliente titular = new Cliente();
     Cliente dependente;
     private double saldo;
 
