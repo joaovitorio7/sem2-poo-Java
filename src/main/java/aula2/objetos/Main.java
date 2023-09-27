@@ -25,5 +25,23 @@ public class Main {
         if(c1 == c2) {
             System.out.println("São o mesmo objeto");
         }
+
+        Conta conta1 = new Conta();
+        conta1.titular = new Cliente();
+        conta1.titular.nome = "João";
+        conta1.depositar(10);
+
+        Conta conta2 = new Conta();
+        conta2.titular = new Cliente();
+        conta2.titular.nome = "João";
+        conta2.depositar(10);
+
+        if(conta1==conta2){
+            System.out.println("São o mesmo objeto");
+        } else {
+            System.out.println("Não são o mesmo objeto");
+            System.out.println(conta1);
+            System.out.println(conta2);
+        }
     }
 }

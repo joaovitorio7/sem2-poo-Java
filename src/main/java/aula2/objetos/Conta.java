@@ -1,13 +1,8 @@
 package aula2.objetos;
 
 public class Conta{
-
-    // dentro da classo conta tenho o cliente que é o titular dessa conta
     Cliente titular;
-
     Cliente dependente;
-
-    // colocar como privado significa boas práticas em JAVA, coloca-se private nos atributos.
     private double saldo;
 
     //this se refere ao atributo
@@ -39,7 +34,7 @@ public class Conta{
     // método to string é o return do endereço
     public String toString(){
         return String.format("nomeTitular: %s, saldo: %.2f,",
-                this.nomeTitular, this.getSaldo());
+                this.titular.nome, this.getSaldo());
     }
 }
 
