@@ -12,5 +12,6 @@ public class TestaEstatico {
 
         Conta conta2 = new Conta();
         System.out.println(Conta.getTotalContas());
+
     }
 }
