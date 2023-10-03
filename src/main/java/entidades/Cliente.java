@@ -1,4 +1,4 @@
-package aula2.objetos;
+package entidades;
 
 public class Cliente {
     private String nome;

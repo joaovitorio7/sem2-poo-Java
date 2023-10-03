@@ -1,5 +1,8 @@
 package aula2.objetos;
 
+import entidades.Cliente;
+import entidades.Conta;
+
 public class TestaAtributos {
     public static void main(String[] args) {
         Conta contaTeste = new Conta();

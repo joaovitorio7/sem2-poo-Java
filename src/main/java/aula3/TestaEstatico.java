@@ -1,4 +1,6 @@
-package aula2.objetos;
+package aula3;
+
+import entidades.Conta;
 
 public class TestaEstatico {
     public static void main(String[] args) {

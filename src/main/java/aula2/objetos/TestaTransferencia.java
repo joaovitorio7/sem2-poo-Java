@@ -1,5 +1,8 @@
 package aula2.objetos;
 
+import entidades.Cliente;
+import entidades.Conta;
+
 public class TestaTransferencia {
     public static void main(String[] args) {
         Conta c1 = new Conta();

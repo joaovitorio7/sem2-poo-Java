@@ -1,4 +1,7 @@
-package aula2.objetos;
+package aula3;
+
+import entidades.Cliente;
+import entidades.Conta;
 
 public class TestaEncapsulamento {
     public static void main(String[] args) {

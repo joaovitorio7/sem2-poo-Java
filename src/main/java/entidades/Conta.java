@@ -1,4 +1,4 @@
-package aula2.objetos;
+package entidades;
 
 public class Conta{
 
@@ -30,7 +30,7 @@ public class Conta{
     }
 
     //this se refere ao atributo
-    boolean sacar(double valor){
+    public boolean sacar(double valor){
         double saldoComLimite = this.saldo + this.limite;
         if(valor <= saldoComLimite) {
             this.saldo -= valor;
@@ -41,12 +41,12 @@ public class Conta{
         }
     }
 
-    void depositar(double valor){
+    public void depositar(double valor){
         this.saldo += valor;
     }
 
     //aqui retorna o valor do saldo para quem evocar esse método pois caso o atributo double esteja privado
-    double getSaldo(){
+    public double getSaldo(){
         return this.saldo + this.limite;
     }
 
