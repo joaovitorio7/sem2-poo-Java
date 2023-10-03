@@ -51,7 +51,7 @@ public class Conta{
 
     //aqui retorna o valor do saldo para quem evocar esse método pois caso o atributo double esteja privado
     double getSaldo(){
-        return this.saldo;
+        return this.saldo + this.limite;
     }
 
     public void transferir(Conta outraConta, double valor ){
