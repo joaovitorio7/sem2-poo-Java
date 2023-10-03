@@ -5,6 +5,27 @@ public class Conta{
     Cliente dependente;
     private double saldo;
 
+    boolean ativa;
+
+    public Conta(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Conta() {}
+
+    public Conta(double saldo){
+        this.saldo = saldo;
+    }
+
+    public Conta(String nomeTitular, String sobrenomeTitular, String cpfTitular){
+        Cliente titular = new Cliente();
+        titular.nome = nomeTitular;
+        titular.sobrenome = sobrenomeTitular;
+        titular.cpf = cpfTitular;
+
+        this.titular = titular;
+    }
+
     //this se refere ao atributo
     boolean sacar(double valor){
         if(valor <= this.saldo) {

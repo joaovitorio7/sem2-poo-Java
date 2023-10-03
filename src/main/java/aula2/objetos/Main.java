@@ -10,8 +10,9 @@ public class Main {
 
         System.out.printf("%na=%d, b=%d%n", a, b);
 
+        Cliente titular1 = new Cliente();
         //c1 e c2 são variáveis diferentes mas estão guardando dentro de si o mesmo objeto.
-        Conta c1 = new Conta();
+        Conta c1 = new Conta(titular1);
         c1.depositar(100);
         System.out.printf("Saldo de c1 é R$%.2f%n", c1.getSaldo());
 
