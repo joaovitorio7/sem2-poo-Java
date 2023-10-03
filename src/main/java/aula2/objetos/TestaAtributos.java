@@ -6,18 +6,20 @@ public class TestaAtributos {
         System.out.println(contaTeste);
 
         Cliente cli = new Cliente();
-        cli.nome = "Henrique";
-        cli.sobrenome = "Mafra";
-        cli.cpf = "03192837551";
-        cli.email = "sashauh@ksdmks.com";
+        cli.setNome("Henrique");
+        cli.setSobrenome("Mafra");
+        cli.setCpf("03192837551");
+        cli.setEmail("sashauh@ksdmks.com");
 
-        contaTeste.titular = cli;
+        contaTeste.setTitular(cli);
 
-        contaTeste.titular.telefone = "71 98547125";
+        contaTeste.getTitular().setTelefone("71 98547125");
 
-        contaTeste.dependente = new Cliente();
-        contaTeste.dependente.nome = "Lucas";
-        contaTeste.dependente.sobrenome = "Alves";
-        contaTeste.dependente.cpf = "03192715478";
+        Cliente dependente = new Cliente();
+        dependente.setNome("Lucas");
+        dependente.setSobrenome("Alves");
+        dependente.setCpf("03192715478");
+
+        contaTeste.setDependente(dependente);
     }
 }

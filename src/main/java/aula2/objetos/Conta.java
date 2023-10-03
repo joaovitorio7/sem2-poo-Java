@@ -1,8 +1,8 @@
 package aula2.objetos;
 
 public class Conta{
-    Cliente titular;
-    Cliente dependente;
+    private Cliente titular;
+    private Cliente dependente;
     private double saldo;
     private boolean ativa;
 
@@ -60,10 +60,44 @@ public class Conta{
         }
     }
 
+    public void setLimite(double limite) {
+        this.limite = limite;
+    }
+
+    public double getLimite() {
+        return this.limite;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Cliente getDependente() {
+        return dependente;
+    }
+
+    public void setDependente(Cliente dependente) {
+        this.dependente = dependente;
+    }
+
+    public boolean isAtiva() {
+        return ativa;
+    }
+
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
+    }
+
     // método to string é o return do endereço
     public String toString(){
         return String.format("nomeTitular: %s, saldo: %.2f,",
                 this.titular.nome, this.getSaldo());
     }
 }
+
+
 
