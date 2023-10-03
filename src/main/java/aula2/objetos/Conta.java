@@ -1,6 +1,8 @@
 package aula2.objetos;
 
 public class Conta{
+
+    public static int totalContas;
     private Cliente titular;
     private Cliente dependente;
     private double saldo;
@@ -8,9 +10,12 @@ public class Conta{
 
     private double limite = -200;
 
-    public Conta() {}
+    public Conta() {
+        Conta.totalContas++;
+    }
 
     public Conta(Cliente titular) {
+        this();
         this.titular = titular;
     }
 
@@ -22,15 +27,6 @@ public class Conta{
     public Conta(Cliente titular, double saldo, double limite){
         this(titular, saldo);
         this.limite = limite;
-    }
-
-    public Conta(String nomeTitular, String sobrenomeTitular, String cpfTitular){
-        Cliente titular = new Cliente();
-        titular.setNome(nomeTitular);
-        titular.setSobrenome(sobrenomeTitular);
-        titular.setCpf(cpfTitular);
-
-        this.titular = titular;
     }
 
     //this se refere ao atributo
@@ -90,6 +86,10 @@ public class Conta{
 
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
+    }
+
+    public static int getTotalContas() {
+        return totalContas;
     }
 
     // método to string é o return do endereço
