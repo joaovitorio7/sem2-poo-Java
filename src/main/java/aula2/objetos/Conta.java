@@ -7,13 +7,14 @@ public class Conta{
 
     boolean ativa;
 
+    public Conta() {}
+
     public Conta(Cliente titular) {
         this.titular = titular;
     }
 
-    public Conta() {}
-
-    public Conta(double saldo){
+    public Conta(Cliente titular, double saldo){
+        this(titular);
         this.saldo = saldo;
     }
 
