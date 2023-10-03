@@ -7,8 +7,9 @@ public class TestaEncapsulamento {
         cliente.sobrenome = "Oliveira";
         cliente.cpf = "03192837551";
 
-        Conta minhaConta = new Conta(cliente, 50, -100);
+        Conta minhaConta = new Conta(cliente, 50, 100);
 
         minhaConta.sacar(60);
+        System.out.printf("Novo saldo da conta é: R$%.2f", minhaConta.getSaldo());
     }
 }
