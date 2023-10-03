@@ -1,11 +1,12 @@
 package aula2.objetos;
 
 public class Conta{
-    Cliente titular = new Cliente();
+    Cliente titular;
     Cliente dependente;
     private double saldo;
+    private boolean ativa;
 
-    boolean ativa;
+    private double limite = -200;
 
     public Conta() {}
 
@@ -16,6 +17,11 @@ public class Conta{
     public Conta(Cliente titular, double saldo){
         this(titular);
         this.saldo = saldo;
+    }
+
+    public Conta(Cliente titular, double saldo, double limite){
+        this(titular, saldo);
+        this.limite = limite;
     }
 
     public Conta(String nomeTitular, String sobrenomeTitular, String cpfTitular){
@@ -29,7 +35,8 @@ public class Conta{
 
     //this se refere ao atributo
     boolean sacar(double valor){
-        if(valor <= this.saldo) {
+        double saldoComLimite = this.saldo + this.limite;
+        if(valor <= saldoComLimite) {
             this.saldo -= valor;
             return true;
         } else {
