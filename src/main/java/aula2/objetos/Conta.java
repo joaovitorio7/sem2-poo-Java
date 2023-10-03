@@ -2,7 +2,7 @@ package aula2.objetos;
 
 public class Conta{
 
-    public static int totalContas;
+    public int totalContas;
     private Cliente titular;
     private Cliente dependente;
     private double saldo;
@@ -11,7 +11,7 @@ public class Conta{
     private double limite = -200;
 
     public Conta() {
-        Conta.totalContas++;
+        this.totalContas++;
     }
 
     public Conta(Cliente titular) {
@@ -88,7 +88,7 @@ public class Conta{
         this.ativa = ativa;
     }
 
-    public static int getTotalContas() {
+    public int getTotalContas() {
         return totalContas;
     }
 
