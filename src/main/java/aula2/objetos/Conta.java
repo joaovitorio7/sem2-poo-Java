@@ -26,9 +26,9 @@ public class Conta{
 
     public Conta(String nomeTitular, String sobrenomeTitular, String cpfTitular){
         Cliente titular = new Cliente();
-        titular.nome = nomeTitular;
-        titular.sobrenome = sobrenomeTitular;
-        titular.cpf = cpfTitular;
+        titular.setNome(nomeTitular);
+        titular.setSobrenome(sobrenomeTitular);
+        titular.setCpf(cpfTitular);
 
         this.titular = titular;
     }
@@ -95,7 +95,7 @@ public class Conta{
     // método to string é o return do endereço
     public String toString(){
         return String.format("nomeTitular: %s, saldo: %.2f,",
-                this.titular.nome, this.getSaldo());
+                this.titular.getNome(), this.getSaldo());
     }
 }
 
